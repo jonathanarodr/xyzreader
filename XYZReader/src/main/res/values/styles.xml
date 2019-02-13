@@ -16,13 +16,34 @@
 -->
 
 <resources>
-
-    <style name="Theme.Bacon" parent="@style/Theme.AppCompat.Light.NoActionBar">
-
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
     </style>
-
-    <style name="Theme.Bacon.Detail">
-        <item name="android:statusBarColor">@android:color/transparent</item>
+    <style name="AppTheme.Link" parent="AppTheme">
+        <item name="android:fontFamily">sans-serif-black</item>
     </style>
-
+    <style name="AppTheme.Subhead" parent="TextAppearance.AppCompat.Subhead">
+        <item name="android:fontFamily">@font/robotoslab_regular</item>
+        <item name="android:textColor">@color/colorTextPrimary</item>
+    </style>
+    <style name="AppTheme.Subhead.Detail" parent="AppTheme.Subhead">
+        <item name="android:textSize">@dimen/detail_title_text_size</item>
+    </style>
+    <style name="AppTheme.Body" parent="TextAppearance.AppCompat.Body1">
+        <item name="android:textColor">@color/colorTextSecondary</item>
+    </style>
+    <style name="AppTheme.Body.Detail" parent="AppTheme.Body">
+        <item name="android:textSize">@dimen/detail_body_text_size</item>
+    </style>
+    <style name="AppTheme.By.Detail" parent="TextAppearance.AppCompat.Small">
+        <item name="android:fontFamily">sans-serif-black</item>
+        <item name="android:textSize">@dimen/detail_by_text_size</item>
+        <item name="android:textColor">@color/colorTextPrimary</item>
+    </style>
 </resources>
